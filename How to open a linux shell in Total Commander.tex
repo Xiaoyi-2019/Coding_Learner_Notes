@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
+\usepackage{subcaption}
+\usepackage{graphbox, graphicx}
+\graphicspath{ {/mnt/f/Screenshots} }
+
+\begin{document}
+\textbf{\Large How to open a linux shell in Total Commander (TM)?}
+\vspace{0.5cm}
+\begin{flushleft}
+	\textbf{\normalsize  Purpose:}
+\end{flushleft}
+
+\begin{flushleft}
+	Previously I know how to open a command prompt window under the "Commands" dropdown list in TM. But There is no clickable option to open a linux shell. For that reason, I just use the regular file explorer, press "Shift" and right-click, select to open a linux shell within a particular directory. 
+\end{flushleft}
+
+\begin{flushleft}	
+	But I really want to use TM to navigate through both filesystems due to some great features TM has. I searched online and found some solution that requires writing some scripts to be able to open a linux shell. But I think TM may have already had an easier solution laying somewhere. I tried multiple ways, and luckily I made it work. Check out more details below.
+\end{flushleft}
+
+\begin{flushleft}
+	\textbf{\normalsize  Sys and software Info:}
+	\begin{itemize}
+		\item  \normalsize Systems: Win 10 Home x64 OS; WSL enabled: Ubuntu-20.04 (\small desktop shortcut of linux filesystem created for easy access)
+  		\item  \normalsize TM version: 9.51 x64	
+	\end{itemize}	
+\end{flushleft}
+
+\begin{flushleft}
+	\textbf{Procedure:}
+\end{flushleft}
+
+\begin{flushleft}
+	\begin{itemize}
+		\item locate the linux filesystem shortcut on desktop (Fig1.a)
+  		\item type "bash" in the dialog box (Fig1.b)
+    	\item linux shell is opened (Fig1.c)
+     	\item quickly access of VS Code: type "code ." (Fig2)
+      	\item  open a command prompt window: type "cmd" (figure not shown)
+	\end{itemize}
+\end{flushleft}
+
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}[b]{0.4\linewidth}
+		\includegraphics[width=\linewidth]{locate_wsl_directory.png}
+		\caption{Locate Linux filesystem}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.5\linewidth}
+		\includegraphics[width=\linewidth]{type_bash.png}
+		\caption{Type "bash" in the dialog box}
+	\end{subfigure}
+
+	\begin{subfigure}[b]{0.8\linewidth}
+		\includegraphics[width=\linewidth, scale=0.3]{linux_shell.png}
+		\caption{Linux shell ready}
+	\end{subfigure}
+
+	\caption{Easy way to open a linux shell in TM.}
+	\label{open_linux_shell}	
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}[b]{0.48\linewidth}
+		\includegraphics[width=\linewidth, align=t]{type_code.png}
+		\caption{Type "code ." in the dialog box}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.43\linewidth}
+		\includegraphics[width=\linewidth, align=t]{vsCode.png}
+		\caption{VS Code ready}
+	\end{subfigure}
+
+	\caption{Easy way to open VS Code in TM.}
+	\label{open_linux_shell}	
+\end{figure}
+
+\begin{flushleft}
+	\textbf{\normalsize  Summary:}
+\end{flushleft}
+
+\begin{flushleft}
+	\normalsize I'm glad to find this easy way to open shells or even VS Code within a particular directory with TM. I hope you will find it interesting and useful as well.
+\end{flushleft}
+
+\end{document}
